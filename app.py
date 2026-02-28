@@ -21,5 +21,6 @@ def executar():
 
 if __name__ == '__main__':
     # Roda o servidor localmente
-    print("Servidor Trust Online! Acesse: http://127.0.0.1:5000")
-    app.run(debug=True)
+    print("Servidor Trust Online! Acesse: http://0.0.0.0:5000")
+    # A linha abaixo deve ter exatamente 4 espaços de recuo
+    app.run(host='0.0.0.0', port=5000, debug=True)
